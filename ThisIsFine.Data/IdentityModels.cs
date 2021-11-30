@@ -32,7 +32,7 @@ namespace ThisIsFine.Data
         {
             return new ApplicationDbContext();
         }
-        public DbSet<Note> Notes { get; set; }
+        public DbSet<Post> Posts { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
