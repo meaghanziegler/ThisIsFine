@@ -23,5 +23,10 @@ namespace ThisIsFine.Data
 
         [Required]
         public Guid AuthorId { get; set; }
+
+        [Required]
+        public DateTimeOffset CreatedUtc { get; set; }
+
+        public  DateTimeOffset? ModifiedUtc { get; set; }
     }
 }

@@ -54,11 +54,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PostService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ThisIsFine.Data\ThisIsFine.Data.csproj">
+      <Project>{5887a9de-9e42-4dd5-b319-f6674210f752}</Project>
+      <Name>ThisIsFine.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ThisIsFine.Models\ThisIsFine.Models.csproj">
+      <Project>{27541a83-0f4e-43f0-8106-a0bccefa2f0b}</Project>
+      <Name>ThisIsFine.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
