@@ -27,11 +27,12 @@ namespace ThisIsFine.Data
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
-        
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
         }
+
         public DbSet<Post> Posts { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
