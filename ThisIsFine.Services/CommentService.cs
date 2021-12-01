@@ -10,16 +10,16 @@ namespace ThisIsFine.Services
 {
     public class CommentService
     {
-        private readonly Guid _usedID;
-        public CommentService(Guid usedID)
+        private readonly Guid _usedId;
+        public CommentService(Guid usedId)
         {
-            _usedID = usedID;
+            _usedId = usedId;
         }
         public bool CreateComment(CommentCreate model)
         {
             var entity = new Comment()
             {
-                AuthorID = _usedID,
+                AuthorId = _usedId,
                 Text = model.Text,
                 
             };
@@ -33,9 +33,9 @@ namespace ThisIsFine.Services
         {
             using (var ctx = new ApplicationDbContext())
             {
-                var query = ctx.Comments.Where(e => e.AuthorID == _usedID).Select(e => new CommentList
+                var query = ctx.Comments.Where(e => e.AuthorId == _usedId).Select(e => new CommentList
                 {
-                    ID = e.ID
+                    CommentId = e.CommentId
 
                 }) ;
                 return query.ToArray();

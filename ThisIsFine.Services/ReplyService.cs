@@ -40,7 +40,7 @@ namespace ThisIsFine.Services
                 var query =
                     ctx
                         .Replies
-                        .Where(e =>.AuthorId == _userId)
+                        .Where(e =>e.AuthorId == _userId)
                         .Select(
                             e =>
                                 new ReplyListItem

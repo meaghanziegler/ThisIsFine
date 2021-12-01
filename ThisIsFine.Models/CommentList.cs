@@ -10,7 +10,7 @@ namespace ThisIsFine.Models
     public class CommentList
     {
         
-        public int ID { get; set; }
+        public int CommentId { get; set; }
         [Display (Name ="Created")]
         public DateTimeOffset CreatedUTC { get; set; }
     }

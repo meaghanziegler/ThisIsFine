@@ -8,7 +8,7 @@ namespace ThisIsFine.Models
 {
     public class CommentDetail
     {
-        public int ID { get; set; }
+        public int CommentId { get; set; }
         public string Text { get; set;  }
     }
 }
