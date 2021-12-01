@@ -10,7 +10,7 @@ namespace ThisIsFine.Models
     public class CommentCreate
     {
         [Required]
-        public int ID { get; set; }
+        
         public string Text { get; set; }
         
     }

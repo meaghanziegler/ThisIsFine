@@ -21,7 +21,7 @@ namespace ThisIsFine.Services
             {
                 AuthorID = _usedID,
                 Text = model.Text,
-                ID = model.ID
+                
             };
             using (var ctx = new ApplicationDbContext())
             {
