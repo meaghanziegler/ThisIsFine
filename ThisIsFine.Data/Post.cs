@@ -18,8 +18,6 @@ namespace ThisIsFine.Data
         [Required]
         public string Text { get; set; }
 
-
-
         //Virtual list of comments
         public virtual List<Comment> Comments { get; set; }
 
