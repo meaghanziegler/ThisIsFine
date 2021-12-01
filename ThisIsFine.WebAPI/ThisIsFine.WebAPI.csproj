@@ -312,6 +312,14 @@
       <Project>{5887A9DE-9E42-4DD5-B319-F6674210F752}</Project>
       <Name>ThisIsFine.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ThisIsFine.Models\ThisIsFine.Models.csproj">
+      <Project>{27541a83-0f4e-43f0-8106-a0bccefa2f0b}</Project>
+      <Name>ThisIsFine.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ThisIsFine.Services\ThisIsFine.Services.csproj">
+      <Project>{cc95c863-dbca-406e-95cf-dfa7004c3ee5}</Project>
+      <Name>ThisIsFine.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -64,6 +64,16 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ThisIsFine.Data\ThisIsFine.Data.csproj">
+      <Project>{5887A9DE-9E42-4DD5-B319-F6674210F752}</Project>
+      <Name>ThisIsFine.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ThisIsFine.Models\ThisIsFine.Models.csproj">
+      <Project>{27541A83-0F4E-43F0-8106-A0BCCEFA2F0B}</Project>
+      <Name>ThisIsFine.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
