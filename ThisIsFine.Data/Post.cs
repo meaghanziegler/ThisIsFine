@@ -20,6 +20,7 @@ namespace ThisIsFine.Data
 
 
         //Virtual list of comments
+        public virtual List<Comments> Comments { get; set; }
 
         [Required]
         public Guid AuthorId { get; set; }
