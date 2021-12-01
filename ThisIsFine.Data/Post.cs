@@ -18,9 +18,8 @@ namespace ThisIsFine.Data
         [Required]
         public string Text { get; set; }
 
-
         //Virtual list of comments
-        public virtual List<Comments> Comments { get; set; }
+        public virtual List<Comment> Comments { get; set; }
 
         [Required]
         public Guid AuthorId { get; set; }
@@ -28,6 +27,6 @@ namespace ThisIsFine.Data
         [Required]
         public DateTimeOffset CreatedUtc { get; set; }
 
-        public  DateTimeOffset? ModifiedUtc { get; set; }
+        public DateTimeOffset? ModifiedUtc { get; set; }
     }
 }
