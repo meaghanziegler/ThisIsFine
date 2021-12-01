@@ -14,7 +14,12 @@ namespace ThisIsFine.Data
         public int CommentId { get; set; }
         [Required]
         public int ReplyId { get; set; }
-        public string Text { get; set; }
+        [Required]
         public Guid AuthorId { get; set; }
+        [Required]
+        public string Text { get; set; }
+        [Required]
+        public DateTimeOffset CreatedUtc { get; set; }
+        public DateTimeOffset? ModifiedUtc { get; set; }
     }
 }
