@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ThisIsFine.Data;
+using ThisIsFine.Models;
 
 namespace ThisIsFine.Services
 {
@@ -18,9 +19,10 @@ namespace ThisIsFine.Services
         {
             var entity = new Comment()
             {
-                ID= _userID,
+                Text = model.Text;
 
             }
+        
         }
     }
 }
