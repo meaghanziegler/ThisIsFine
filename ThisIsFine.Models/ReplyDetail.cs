@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ThisIsFine.Data
+namespace ThisIsFine.Models
 {
-    class Test
+    class ReplyDetail
     {
+        public int ReplyId { get; set; }
+        public string Text { get; set; }
     }
 }

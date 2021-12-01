@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ThisIsFine.Models
 {
-    public class CommentDetail
+    class ReplyEdit
     {
-        public int CommentId { get; set; }
-        public string Text { get; set;  }
+        public int ReplyId { get; set; }
+        public string Text { get; set; }
     }
 }

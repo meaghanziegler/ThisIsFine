@@ -14,7 +14,7 @@ namespace ThisIsFine.Data
         public int PostId { get; set; }
         public int CommentId { get; set; }
         public string Text { get; set; }
-        public Guid AuthorID { get; set; }
+        public Guid AuthorId { get; set; }
         public virtual List<Reply> ReplyId { get; set; }
         public DateTimeOffset CreatedUTC { get; set; }
         public DateTimeOffset? ModifiedUTC { get; set; }
