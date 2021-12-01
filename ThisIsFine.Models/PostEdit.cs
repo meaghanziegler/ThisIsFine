@@ -1,17 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ThisIsFine.Models
 {
-    public class CommentCreate
+    public class PostEdit
     {
-        [Required]
-        
+        public int PostId { get; set; }
+        public string Title { get; set; }
         public string Text { get; set; }
-        
     }
 }

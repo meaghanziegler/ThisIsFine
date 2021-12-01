@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommentService.cs" />
+    <Compile Include="PostService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -71,6 +72,10 @@
     </ProjectReference>
     <ProjectReference Include="..\ThisIsFine.Models\ThisIsFine.Models.csproj">
       <Project>{27541A83-0F4E-43F0-8106-A0BCCEFA2F0B}</Project>
+      <Project>{5887a9de-9e42-4dd5-b319-f6674210f752}</Project>
+      <Name>ThisIsFine.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ThisIsFine.Models\ThisIsFine.Models.csproj">
       <Name>ThisIsFine.Models</Name>
     </ProjectReference>
   </ItemGroup>

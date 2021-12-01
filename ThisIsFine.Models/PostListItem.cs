@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace ThisIsFine.Models
 {
-    public class CommentCreate
+    public class PostListItem
     {
-        [Required]
-        
-        public string Text { get; set; }
-        
+        public int PostId { get; set; }
+        public string Title { get; set; }
+
+        [Display(Name="Created")]
+        public DateTimeOffset CreatedUtc { get; set; }
     }
 }

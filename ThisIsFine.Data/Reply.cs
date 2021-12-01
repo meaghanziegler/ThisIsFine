@@ -8,15 +8,13 @@ using System.Threading.Tasks;
 
 namespace ThisIsFine.Data
 {
-    public class Comment
+    public class Reply
     {
-        [ForeignKey("Post")]
-        public int PostId { get; set; }
+        [ForeignKey("Comment")]
         public int CommentId { get; set; }
+        [Required]
+        public int ReplyId { get; set; }
         public string Text { get; set; }
-        public Guid AuthorID { get; set; }
-        public virtual List<Reply> ReplyId { get; set; }
-        public DateTimeOffset CreatedUTC { get; set; }
-        public DateTimeOffset? ModifiedUTC { get; set; }
+        public Guid AuthorId { get; set; }
     }
 }
