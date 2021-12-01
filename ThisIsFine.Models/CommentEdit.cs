@@ -8,5 +8,6 @@ namespace ThisIsFine.Models
 {
     public class CommentEdit
     {
+
     }
 }
