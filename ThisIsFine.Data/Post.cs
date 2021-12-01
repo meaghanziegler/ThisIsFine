@@ -19,6 +19,7 @@ namespace ThisIsFine.Data
         public string Text { get; set; }
 
 
+
         //Virtual list of comments
         public virtual List<Comments> Comments { get; set; }
 
@@ -29,5 +30,6 @@ namespace ThisIsFine.Data
         public DateTimeOffset CreatedUtc { get; set; }
 
         public  DateTimeOffset? ModifiedUtc { get; set; }
+
     }
 }
