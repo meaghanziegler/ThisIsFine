@@ -5,31 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ThisIsFine.Data
+namespace ThisIsFine.Models
 {
-    public class Post
+    public class PostDetail
     {
-        [Key]
         public int PostId { get; set; }
-
-        [Required]
         public string Title { get; set; }
-
-        [Required]
         public string Text { get; set; }
 
-
-
-        //Virtual list of comments
-        public virtual List<Comments> Comments { get; set; }
-
-        [Required]
-        public Guid AuthorId { get; set; }
-
-        [Required]
+        [Display(Name="Created")]
         public DateTimeOffset CreatedUtc { get; set; }
 
-        public  DateTimeOffset? ModifiedUtc { get; set; }
-
+        [Display(Name="Modified")]
+        public DateTimeOffset? ModifiedUtc { get; set; }
     }
 }
