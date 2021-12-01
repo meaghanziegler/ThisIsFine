@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +12,5 @@ namespace ThisIsFine.Data
         public string Text { get; set; }
         public Guid AuthorID { get; set; }
         public virtual List<Replies> Replies { get; set; }
-        [ForeignKey]
     }
 }

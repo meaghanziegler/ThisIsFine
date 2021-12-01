@@ -3,10 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ThisIsFine.Data;
 
 namespace ThisIsFine.Services
 {
-    class CommentService
+    public class CommentService
     {
+        private readonly Guid _userID;
+        public CommentService(Guid usedID)
+        {
+            _userID = usedID;
+        }
+        public bool CreateComment(CommentCreate model)
+        {
+            var entity = new Comment()
+            {
+                ID= _userID,
+
+            }
+        }
     }
 }
