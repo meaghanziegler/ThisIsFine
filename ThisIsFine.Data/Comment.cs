@@ -13,6 +13,8 @@ namespace ThisIsFine.Data
         public int ID { get; set; }
         public string Text { get; set; }
         public Guid AuthorID { get; set; }
-        public virtual List<Replies> Replies { get; set; }
+        public DateTimeOffset CreatedUTC { get; set; }
+        public DateTimeOffset? ModifiedUTC { get; set; }
+        //public virtual List<Replies> Replies { get; set; }
     }
 }
